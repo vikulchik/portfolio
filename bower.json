@@ -1,0 +1,7 @@
+{
+  "name": "portfolio",
+  "devDependencies": {
+    "normalize-scss": "~3.0.3",
+    "jquery": "1.12.0"
+  }
+}
