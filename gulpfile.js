@@ -52,7 +52,7 @@ gulp.task('sprite', function() {
       imgPath: 'dev/img/icons/sprite.png',
       cssName: 'sprite.scss'
     }));
-  spriteData.img.pipe(gulp.dest('prod/img'));
+  spriteData.img.pipe(gulp.dest('dev/img'));
 spriteData.css.pipe(gulp.dest('dev/scss'))
 });
 
