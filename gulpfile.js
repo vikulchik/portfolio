@@ -53,7 +53,7 @@ gulp.task('sprite', function() {
       cssName: 'sprite.scss'
     }));
   spriteData.img.pipe(gulp.dest('prod/img'));
-  spriteData.css.pipe(gulp.dest('dev/scss'))
+spriteData.css.pipe(gulp.dest('dev/scss'))
 });
 
 
@@ -73,6 +73,7 @@ gulp.task('default', [
   'jade-compile',
   'sass-compile',
   'browser-sync',
+  'sprite',
   'watch'
 
 ]);

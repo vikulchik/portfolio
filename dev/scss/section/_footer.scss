@@ -1,0 +1,42 @@
+.footer {
+  background-color: #fdfdfd;
+  min-height: 61px;
+  padding: 27px 0 27px 0;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  &_button, &_copyright {
+    margin: 0;
+  }
+  &_copyright {
+    text-align: center;
+    color: #727070;
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 50px;
+  }
+  .button-login {
+    display: inline-block;
+  }
+  &_button {
+    position: relative;
+    color: #9c9c9c;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    &:after {
+      display: block;
+      content: '';
+    }
+    &:hover {
+      &:after {
+        display: block;
+        content: '';
+        position: absolute;
+      }
+    }
+  }
+}

@@ -1,9 +1,16 @@
 doctype html
 html(lang='ru')
   head
+    title Portfolio
     link(rel="stylesheet" href="css/main.css")
     link(rel="stylesheet" href="css/normalize.css")
 
   body
-    .wrapper text
+    include section/_header
+    .wrapper
+      section.main
+        section.main_information.clearfix
+          include section/_aside
+          include section/_about-me
+    include section/_footer
 

@@ -1,4 +1,38 @@
+@import "sprite";
+@import "mixins";
+
+@import "section/header";
+@import "section/aside";
+@import "section/about-me";
+@import "section/footer";
+@import "section/my-works";
+@import "section/call-me";
+
+
+
 
 body {
-  background: green;
+  background: url("../img/bg.jpg") no-repeat 0 0;
+  background-size: cover;
+  height: 100%;
+  min-width: 100%;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: auto;
+}
+
+.main {
+  padding-top: 33px;
+  padding-bottom: 100px;
+  &_information {
+    max-width: 970px;
+    margin: auto;
+  }
 }

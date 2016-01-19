@@ -1,0 +1,92 @@
+.main {
+  &_navigation {
+    display: block;
+    width: 250px;
+    float: left;
+  }
+  &_contacts {
+    display: block;
+    float: left;
+    width: 250px;
+  }
+
+  .main-p {
+    min-height: 43px;
+    width: 250px;
+    color: #d0982c;
+    font-size: 20px;
+    display: block;
+    background: #e8bf6e;
+    background: linear-gradient(to bottom, #f4cc7e, #deb461);
+    padding: 8px 28px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 1px solid #caa14e;
+    margin: 0;
+  }
+
+  &_mail, &_phone, &_skype {
+    &.link {
+      background-color: #f7f5f5;
+      background: linear-gradient(to bottom, #ffffff, #f5f5f5);
+      color: #727070;
+      border: 1px solid #d4d3d2;
+      font-size: 14px;
+      display: block;
+      min-height: 35px;
+      width: 250px;
+      text-decoration: none;
+      border-radius: 2px;
+      box-sizing: border-box;
+      padding: 6px 10px 9px 96px;
+      position: relative;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+      }
+      &:hover {
+        background: linear-gradient(to bottom, #ffffff, #f2e7d0);
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &_item, .contacts_li {
+    list-style-type: none;
+  }
+
+  &_link {
+    text-decoration: none;
+    border-radius: 2px;
+    color: #727070;
+    font-size: 20px;
+    display: block;
+    min-height: 56px;
+    width: 250px;
+    padding: 13px 29px 14px 29px;
+    box-sizing: border-box;
+    border: 1px solid #c3c3c3;
+    background: linear-gradient(#f9f9fa, #e8e7e8);
+
+    &:hover {
+      background: linear-gradient(#e2e0e0, #bebdbd);
+    }
+
+    &:active {
+      background-color: #669f88;
+      background: linear-gradient(to bottom, #7de8cd, #3fb79a);
+      color: #1e7465;
+      border: 1px solid #88d1b3;
+    }
+
+  }
+  &_list {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 35px;
+  }
+}
