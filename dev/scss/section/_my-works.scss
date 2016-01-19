@@ -54,14 +54,6 @@
   background: #f3f1f1;
   background: linear-gradient(to bottom, #fafbfb, #e9e8e8);
   position: relative;
-  &:after {
-    content: '';
-    display: block;
-    position: absolute;
-    background-color: #f7f7f7;
-    box-shadow: -2px -2px 1px #cfcfcf;
-    border-radius: 50% 50%;
-  }
   &:hover {
     background: #d7d5d5;
     background: linear-gradient(to bottom, #e5e4e4, #bebdbd);
@@ -71,18 +63,25 @@
     content: '';
     display: block;
     position: absolute;
-    background-color: #d7d7d7;
-    box-shadow: inset 2px 2px 1px rgba(0,0,0,0.3),0 1px 0 rgba(255,255,255,0.8);
+    width: 53px;
+    height: 55px;;
+    top: 27px;
+    left: 56px;
+    background-color: #f7f7f7;
+    box-shadow: -2px -2px 1px #d0d0d0;
     border-radius: 50% 50%;
   }
-}
+    &:hover {
+      background-color: #d7d7d7;
+    }
+  }
 
 .works_add {
   font-size: 14px;
   color: #727070;
   text-decoration: none;
   display: block;
-  padding: 96px 27px;
+  padding: 96px 20px;
   &:hover {
     color: #727070;
   }
@@ -108,7 +107,7 @@ span {
       top: 48px;
       left: 44px;
       z-index: 2;
-      transition: 0.6s;
+      transition: 0.3s;
       &:hover {
         color: #000000;
         background-color: #ffffff;
