@@ -1,0 +1,57 @@
+doctype html
+html(lang='ru')
+  head
+    title Portfolio
+    link(rel="stylesheet" href="css/main.css")
+    link(rel="stylesheet" href="css/normalize.css")
+
+  body
+    include section/_header
+    .wrapper
+      .main
+        .main-content.clearfix
+          include section/_aside
+          section.about-me
+            p.about-me_title Мои работы
+            .about-me_info.about-me_work
+              .about-me_main.clearfix
+                ul.my-works
+                  li.my-works_item
+                    a(href="#").my-works_link
+                      img(src="../img/works-1.png" alt="").my-works_img
+                      span Подробнее
+                    a(href="#").my-works_name a-industry.ru
+                    p.my-works_description Корпоративный и в тоже время продающий сайт строительной компании a-industry.
+                  li.my-works_item
+                    a(href="#").my-works_link
+                      img(src="../img/works-2.png"  alt="").my-works_img
+                      span Подробнее
+                    a(href="#").my-works_name a-industry.ru
+                    p.my-works_description Продающая страница для компании ledenland.
+                  li.my-works_item
+                    a(href="#").my-works_link
+                      img(src="../img/works-3.png"  alt="").my-works_img
+                      span Подробнее
+                    a(href="#").my-works_name a-industry.ru
+                    p.my-works_description Лендинг компании «СRM Consulting» специализирующейся на точной настройке Битрикс24 под бизнес.
+                  li.my-works_item
+                    a(href="#").my-works_link
+                      img(src="../img/works-4.png"  alt="").my-works_img
+                      span Подробнее
+                    a(href="#").my-works_name a-industry.ru
+                    p.my-works_description Сайт по услугам разработки продающих лендингов.
+                  li.my-works_item
+                    a(href="#").my-works_link
+                      img(src="../img/works-5.png"  alt="").my-works_img
+                      span Подробнее
+                    a(href="#").my-works_name a-industry.ru
+                    p.my-works_description Landing page по продажи франшизы снежного бизнеса.
+                  li.my-works_item.add-project
+                    a(href="#").my-works_add Добавить проект
+
+
+
+    include section/_footer
+
+
+    script(src="main.js")
