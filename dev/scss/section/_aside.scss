@@ -26,6 +26,12 @@
   }
 
   &_mail, &_phone, &_skype {
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+    }
     &.link {
       background-color: #f7f5f5;
       background: linear-gradient(to bottom, #ffffff, #f5f5f5);
@@ -43,15 +49,46 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      &:after {
+      &:before {
         content: '';
         display: block;
         position: absolute;
+
+        @include sprite($arrow);
+        left: 48px;
+        top: -3px;
       }
       &:hover {
         background: linear-gradient(to bottom, #ffffff, #f2e7d0);
         text-decoration: underline;
       }
+    }
+  }
+
+  &_mail {
+    &:after {
+
+      @include sprite($mail);
+      top: 12px;
+      left: 19px;
+    }
+  }
+
+  &_phone {
+    &:after {
+
+      @include sprite($phone);
+      top: 7px;
+      left: 21px;
+    }
+  }
+
+  &_skype {
+    &:after {
+
+      @include sprite($skype);
+      top: 7px;
+      left: 17px;
     }
   }
 

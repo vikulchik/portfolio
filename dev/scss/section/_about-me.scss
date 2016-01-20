@@ -81,6 +81,10 @@
           position: absolute;
           content: '';
           display: block;
+
+          @include sprite($img-block);
+          top: -2px;
+          left: -10px;
         }
       }
     }
@@ -93,6 +97,7 @@
       padding: 0;
       margin: 0;
       line-height: 1.5;
+      width: 210px;
     }
   }
 
@@ -114,6 +119,8 @@
       height: 55px;
       left: 3%;
       top: 28%;
+
+     /* @include sprite($bag);*/
     }
 
 
