@@ -3,12 +3,8 @@
 @import "variables";
 
 @import "section/header";
-@import "section/aside";
-@import "section/about-me";
-@import "section/footer";
-@import "section/my-works";
-@import "section/call-me";
-@import "section/pop-up";
+
+
 
 
 
@@ -23,20 +19,6 @@ body {
 html {
   position: relative;
   min-height: 100%;
-}
-
-.wrapper {
-  max-width: 1920px;
-  margin: auto;
-}
-
-.main {
-  padding-top: 33px;
-  padding-bottom: 61px;
-  &_information {
-    max-width: 970px;
-    margin: auto;
-  }
 }
 
 
