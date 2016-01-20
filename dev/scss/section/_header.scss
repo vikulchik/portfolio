@@ -41,10 +41,15 @@
   position: relative;
   width: 38px;
   height: 37px;
+
   &:before {
     position: absolute;
     content: '';
     display: block;
+  }
+
+  &:hover {
+
   }
 }
 
