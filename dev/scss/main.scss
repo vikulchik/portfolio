@@ -3,6 +3,7 @@
 @import "variables";
 
 @import "section/header";
+@import "section/aside";
 
 
 
@@ -19,6 +20,21 @@ body {
 html {
   position: relative;
   min-height: 100%;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: auto;
+}
+
+.main {
+  padding-top: 33px;
+  padding-bottom: 61px;
+}
+
+.main-content {
+  max-width: 970px;
+  margin: auto;
 }
 
 
