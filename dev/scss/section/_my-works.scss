@@ -53,13 +53,21 @@
   height: 135px;
   background: #f3f1f1;
   background: linear-gradient(to bottom, #fafbfb, #e9e8e8);
-  position: relative;
   &:hover {
     background: #d7d5d5;
     background: linear-gradient(to bottom, #e5e4e4, #bebdbd);
     border: 1px solid #b6b6b6;
   }
-  &:after {
+}
+
+.works_add {
+  font-size: 14px;
+  color: #727070;
+  text-decoration: none;
+  display: block;
+  padding: 96px 20px;
+  position: relative;
+  &:before {
     content: '';
     display: block;
     position: absolute;
@@ -71,19 +79,12 @@
     box-shadow: -2px -2px 1px #d0d0d0;
     border-radius: 50% 50%;
   }
-    &:hover {
-      background-color: #d7d7d7;
-    }
-  }
-
-.works_add {
-  font-size: 14px;
-  color: #727070;
-  text-decoration: none;
-  display: block;
-  padding: 96px 20px;
   &:hover {
     color: #727070;
+    &:before {
+        background-color: #d7d7d7;
+        box-shadow: -2px -2px 1px #8C8989;
+    }
   }
 }
 

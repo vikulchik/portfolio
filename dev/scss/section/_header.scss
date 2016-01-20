@@ -57,6 +57,11 @@
 
     @include sprite($facebook);
   }
+  &:hover {
+    &:before {
+      @include sprite($facebook-active);
+    }
+  }
 }
 
 .social_list--vk {
@@ -67,20 +72,39 @@
 
     @include sprite($vk);
   }
+  &:hover {
+    &:before {
+      @include sprite($vk-active);
+    }
+  }
 }
 
 .social_list--twitter {
-  content: '';
-  position: absolute;
-  display: block;
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
 
-  @include sprite($twitter);
+    @include sprite($twitter);
+  }
+  &:hover {
+    &:before {
+      @include sprite($twitter-active);
+    }
+  }
 }
 
 .social_link--github {
-  content: '';
-  position: absolute;
-  display: block;
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
 
-  @include sprite($github);
+    @include sprite($github);
+  }
+  &:hover {
+    &:before {
+      @include sprite($github-active);
+    }
+  }
 }
