@@ -56,11 +56,16 @@
   color: #727070;
   float: left;
   margin-right: 10px;
+  &:nth-child(2n+1) {
+    clear: both;
+  }
 }
 
 .about-span {
   font-size: 14px;
   color: #727070;
+  float: left;
+  margin: 0;
 }
 
 .content_list {
