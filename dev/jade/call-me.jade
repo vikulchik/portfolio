@@ -1,0 +1,35 @@
+doctype html
+html(lang='ru')
+  head
+    title Call me
+    link(rel="stylesheet" href="css/main.css")
+    link(rel="stylesheet" href="css/normalize.css")
+
+  body
+    include section/_header
+    .wrapper
+      .main
+        .main-content.clearfix
+          include section/_aside
+          section.about-me
+            p.about-me_title У вас интересный проект? Напишите мне
+            .about-me_info.about-me_call-me
+              .about-me_form.clearfix
+                form
+                  label.our-label Имя
+                    input(type="text" name="text" placeholder="Как к Вам обращаться").input-placeholder
+                  label.our-label Email
+                    input(type="email" name="email" placeholder="Куда мне писать").input-placeholder
+                  label.our-label.our-label_email Сообщение
+                    textarea(name="message" placeholder="Кратко в чем суть").input-placeholder.input-placeholder_message
+                  label.our-label.our-label_captca Введите код, указанный на картинке
+                    img(src="../img/captcha.png" alt="captca").label-img
+                    input(type="text" name="text" placeholder="Введите код").input-placeholder.input-placeholder_captca
+                  .form-button
+                    input(type="submit" name="submit" value="Отправить").button-submit.button
+                    input(type="reset" name="reset" value="Очистить").button-reset.button
+
+    include section/_footer
+
+
+    script(src="main.js")

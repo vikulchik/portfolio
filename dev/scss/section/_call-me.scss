@@ -1,0 +1,118 @@
+.about-me_call-me {
+  padding: 33px 50px;
+}
+
+.about-me_form {
+  margin: auto;
+  width: 430px;
+}
+
+.our-label {
+  color: #727070;
+  font-size: 14px;
+  width: 193px;
+  display: inline-block;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  &:first-child, &:last-child {
+    margin-left: 0;
+  }
+}
+
+.input-placeholder {
+  border: 1px solid #d6d5d3;
+  border-radius: 3px;
+  color: #c7c6c6;
+  font-size: 12px;
+  background-color: #fafbfc;
+  background: linear-gradient(to bottom, #fbfcfd, #f4f3f3);
+  padding: 12px 9px;
+  width: 175px;
+  margin-top: 10px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.input-placeholder_message {
+  width: 404px;
+  height: 185px;
+  resize: none;
+}
+
+.our-label_email {
+  margin-left: 0;
+}
+
+.our-label_captca  {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.label-img {
+  margin-top: 10px;
+  float: left;
+  margin-right: 20px;
+}
+
+.input-placeholder_captca {
+  margin-top: 27px;
+}
+
+.form-button {
+  width: 345px;
+  margin: auto;
+}
+
+.button {
+  font-size: 14px;
+  padding: 10px 17px;
+  &:focus {
+    outline: 0;
+  }
+}
+
+.button-submit {
+  border: 1px solid #57d2b4;
+  border-radius: 5px;
+  background-color: #4cbda1;
+  background: linear-gradient(to bottom, #5edbbc, #3aa187);
+  color: #1e7465;
+
+  &:hover {
+    background-color: #82c8ac;
+    background: linear-gradient(to bottom, #90dabc, #66a088);
+    color: #467366;
+    border: 1px solid #88d1b3;
+  }
+
+  &:active {
+    background-color: #639b84;
+    background: linear-gradient(to bottom, #78b99f, #4a7664);
+    color: #eeedec;
+    border: 1px solid #88d1b3;
+  }
+}
+
+.button-reset {
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+  background-color: #f3f2f1;
+  background: linear-gradient(to bottom, #fcfcfc, #e9e8e8);
+  color: #727070;
+  float: right;
+
+  &:hover {
+    background-color: #82c8ac;
+    background: linear-gradient(to bottom, #e3e2e2, #c3c3c3);
+    color: #727070;
+    border: 1px solid #d1d1d1;
+  }
+
+  &:active {
+    background-color: #cbcaca;
+    background: linear-gradient(to bottom, #a8a7a7, #bebdbd);
+    color: #eeedec;
+    border: 1px solid #d1d1d1;
+  }
+}
