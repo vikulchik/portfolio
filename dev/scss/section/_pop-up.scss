@@ -7,12 +7,11 @@
   top: 0;
 
   &_form {
-    max-width: 368px;
-    min-height: 464px;
+    max-width: 309px;
+    min-height: 400px;
     background-color: #f8f7f6;
     border-radius: 5px;
     padding: 26px 20px;
-    box-sizing: border-box;
     position: absolute;
     top:50%;
     left: 50%;
@@ -31,9 +30,8 @@
   }
 
   &_input {
-    width: 305px;
-    height: 38px;
-    box-sizing: border-box;
+    width: 283px;
+    height: 19px;
     padding: 14px 10px;
     border: 1px solid #d6d5d3;
     border-radius: 5px;

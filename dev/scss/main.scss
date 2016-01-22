@@ -1,6 +1,7 @@
 @import "sprite";
 @import "mixins";
 @import "variables";
+@import "fonts";
 
 @import "section/header";
 @import "section/aside";
@@ -33,6 +34,7 @@ html {
 
 .main {
   padding-top: 33px;
+  margin-bottom: 61px;
   padding-bottom: 61px;
 }
 
