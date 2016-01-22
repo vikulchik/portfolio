@@ -18,9 +18,9 @@
 }
 
 .nav-link {
+
+  @include font(20,$open-semi-bold, #727070 );
   text-decoration: none;
-  color: #727070;
-  font-size: 20px;
   background-color: #efedec;
   background: linear-gradient(to bottom, #fbfafa, #e9e8e8);
   display: block;
@@ -54,8 +54,8 @@
 
 .contact-link {
   text-decoration: none;
-  color: #727070;
-  font-size: 14px;
+
+  @include font(14,$open-reg, #727070 );
   background-color: #fdfdfd;
   background: linear-gradient(to bottom, #ffffff, #f7f6f6);
   display: block;
@@ -63,7 +63,6 @@
   width: 144px;
   border-radius: 3px;
   padding: 9px 10px 7px 96px;
-  position: relative;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -125,8 +124,8 @@
 }
 
 .contact-title {
-  color: #d0982c;
-  font-size: 20px;
+
+  @include font(20,$open-semi-bold, #d0982c);
   background-color: #efc677;
   background: linear-gradient(to bottom, #f4ce82, #dfb866);
   border: 1px solid #e7bf6f;

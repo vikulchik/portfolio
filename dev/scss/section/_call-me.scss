@@ -11,6 +11,7 @@
   color: #727070;
   font-size: 14px;
   width: 193px;
+  font-family: open_sansregular;
   display: inline-block;
   margin-left: 14px;
   margin-bottom: 15px;
@@ -23,6 +24,7 @@
   border: 1px solid #d6d5d3;
   border-radius: 3px;
   color: #c7c6c6;
+  font-family: open_sanslight;
   font-size: 12px;
   background-color: #fafbfc;
   background: linear-gradient(to bottom, #fbfcfd, #f4f3f3);
@@ -69,6 +71,7 @@
 
 .button {
   font-size: 14px;
+  font-family: open_sanssemibold;
   padding: 10px 25px;
   &:focus {
     outline: 0;
