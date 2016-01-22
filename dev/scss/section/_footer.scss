@@ -12,9 +12,8 @@
   &_copyright {
     display: inline-block;
     margin: 0;
-    font-size: 12px;
-    font-family: open_sanslight;
-    color: #727070;
+
+    @include font(12, $open-light, #727070);
     margin-left: 50px;
   }
 
@@ -24,9 +23,8 @@
 
   &_button {
     display: block;
-    color: #9c9c9c;
-    font-size: 14px;
-    font-family: open_sansbold;
+
+    @include font(11, $open-bold,#9c9c9c);
     text-transform: uppercase;
     text-decoration: none;
     position: relative;

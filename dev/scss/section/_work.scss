@@ -30,9 +30,8 @@
   }
 
   &_name {
-    color: #727070;
-    font-size: 13px;
-    font-family: open_sanssemibold;
+
+    @include font(13, $open-semi-bold,#727070 );
     text-decoration: none;
     background-color: #f2f2f2;
     display: block;
@@ -76,19 +75,17 @@
   }
 
   &_description {
-    color: #9c9b9b;
-    font-size: 12px;
     display: block;
     background-color: #FFFFFF;
     margin: 0;
     padding: 8px 12px;
-    font-family: open_sanslight;
+
+    @include font(12, $open-light, #9c9b9b );
   }
 
   &_add {
-    color: #727070;
-    font-size: 14px;
-    font-family: open_sanssemibold;
+
+    @include font(14, $open-semi-bold,  #727070);
     text-decoration: none;
     width: 100%;
     display: block;
@@ -136,12 +133,11 @@
   position: absolute;
   top: -9999px;
   display: block;
-  color: #ffffff;
   text-transform: uppercase;
-  font-size: 11px;
   border: 2px solid #ffffff;
   padding: 3px 6px;
-  font-family: open_sanssemibold;
+
+  @include font(11, $open-semi-bold,#ffffff );
 }
 .my-works_item-other {
   margin-left: 0;

@@ -20,9 +20,8 @@
 
   &_title {
     margin: -50px 0 21px 0;
-    font-size: 12px;
-    color: #f8f7f6;
-    font-family: open_sanslight;
+
+    @include font(12, $open-light, #f8f7f6)
   }
 
   &_label {
@@ -38,9 +37,8 @@
     border-radius: 5px;
     background-color: #fdfdfd;
     background: linear-gradient(to bottom, #f7f8f9, #f4f3f3);
-    color: #c7c6c6;
-    font-size: 12px;
-    font-family: open_sansregular;
+
+    @include font(12, $open-reg,#c7c6c6 );
     margin: 13px 0 13px 0;
     &:focus {
       outline: 0;
@@ -72,10 +70,9 @@
   position: absolute;
   top: 2px;
   right: 6px;
-  color: #797777;
-  font-family: open_sansbold;
+
+  @include font(17,$open-bold, #797777 );
   text-decoration: none;
-  font-size: 17px;
 }
 
 

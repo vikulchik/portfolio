@@ -8,10 +8,9 @@
 }
 
 .our-label {
-  color: #727070;
-  font-size: 14px;
   width: 193px;
-  font-family: open_sansregular;
+
+  @include font(14,$open-reg,  #727070);
   display: inline-block;
   margin-left: 14px;
   margin-bottom: 15px;
@@ -23,9 +22,8 @@
 .input-placeholder {
   border: 1px solid #d6d5d3;
   border-radius: 3px;
-  color: #c7c6c6;
-  font-family: open_sanslight;
-  font-size: 12px;
+
+  @include font(12,$open-light,  #c7c6c6);
   background-color: #fafbfc;
   background: linear-gradient(to bottom, #fbfcfd, #f4f3f3);
   padding: 12px 9px;
