@@ -12,6 +12,13 @@ var paths = {
       'bower_components/normalize-scss/normalize.scss',
       'dev/scss/main.scss'
     ]
+  },
+  js: {
+    location: [
+      'bower_components/jquery/dist/jquery.js',
+      'dev/js/main.js'
+    ],
+    destination: 'prod/js'
   }
 };
 
