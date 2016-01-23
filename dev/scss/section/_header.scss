@@ -3,6 +3,10 @@
   border-bottom: 7px solid #FFFFFF;
   background: url("../../img/bg-head.jpg") no-repeat 0 0;
   background-size: cover;
+
+  &-description {
+    margin: 0;
+  }
   
   &_content {
     width: 88%;
