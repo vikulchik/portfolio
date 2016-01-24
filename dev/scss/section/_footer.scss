@@ -9,16 +9,48 @@
   text-align: center;
   box-sizing: border-box;
 
+  &_content {
+
+    @media screen and (max-width: 725px) {
+      width: 80%;
+      margin: auto;
+    }
+
+    @media screen and (max-width: 580px) {
+      width: 85%;
+    }
+
+    @media screen and (max-width: 444px) {
+      width: 90%;
+    }
+  }
+
   &_copyright {
     display: inline-block;
     margin: 0;
 
     @include font(12, $open-light, #727070);
     margin-left: 50px;
+
+    @media screen and (max-width: 725px) {
+      float: right;
+    }
+
+    @media screen and (max-width: 580px) {
+      margin-left: 0;
+    }
+
+    @media screen and (max-width: 580px) {
+      font-size: 10px;
+    }
   }
 
   &_login {
     display: inline-block;
+
+    @media screen and (max-width: 725px) {
+      float: left;
+    }
   }
 
   &_button {
@@ -36,6 +68,14 @@
       @include sprite($locked);
       top: -4px;
       left: -26px;
+
+      @media screen and (max-width: 444px) {
+        top: -18px;
+        @media screen and (max-width: 401px) {
+          top: -5px;
+          left: -17px;
+        }
+      } 
     }
 
     &:hover {

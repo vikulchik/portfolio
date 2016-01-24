@@ -1,5 +1,16 @@
 .navigation {
   float: left;
+  display: block;
+  width: 25%;
+
+  @media screen and (max-width: 680px) {
+    float: none;
+    margin: auto;
+  }
+
+  @media screen and (max-width: 444px) {
+    width: 63%;
+  }
 }
 
 .nav-list, .contact-list {
@@ -46,6 +57,10 @@
 .contact-list {
   width: 250px;
   height: 150px;
+
+  @media screen and (max-width: 680px) {
+    margin-bottom: 30px;
+  }
 }
 
 .contact-item {

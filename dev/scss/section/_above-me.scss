@@ -9,10 +9,53 @@
   margin-bottom: 36px;
   float: right;
   margin-right: 8px;
+
+  @media screen and (max-width: 935px) {
+    width: 69%;
+  }
+
+  @media screen and (max-width: 885px) {
+    width: 65%;
+  }
+
+  @media screen and (max-width: 841px) {
+    width: 60%;
+  }
+
+  @media screen and (max-width: 680px) {
+    float: none;
+    margin: auto;
+    margin-bottom: 30px;
+    width: 80%;
+  }
+
+  @media screen and (max-width: 530px) {
+    width: 90%;
+  }
+
+  @media screen and (max-width: 530px) {
+    width: 95%;
+  }
 }
 
 .about-me_info-main {
   padding: 15px 40px 27px 44px;
+
+  @media screen and (max-width: 895px){
+    padding: 15px 40px 27px 27px
+  }
+
+  @media screen and (max-width: 885px){
+    padding: 15px 40px 27px 15px;
+  }
+
+  @media screen and (max-width: 725px){
+    padding: 15px 45px 27px 30px;
+  }
+
+  @media screen and (max-width: 444px){
+    padding: 15px 45px 27px 17px;
+  }
 }
 
 .about-me_title {
@@ -37,6 +80,12 @@
   border: 10px solid #f0efee;
   margin-top: 23px;
   box-shadow: 0 0 1px black;
+
+
+  @media screen and (max-width: 841px) {
+    float: none;
+    margin: auto;
+  }
 }
 
 .avatar {
@@ -50,6 +99,22 @@
 .about-block {
   float: right;
   width: 380px;
+
+  @media screen and (max-width: 841px) {
+    float: none;
+  }
+
+  @media screen and (max-width: 444px) {
+    width: 360px;
+  }
+
+  @media screen and (max-width: 401px) {
+    width: 330px;
+  }
+
+  @media screen and (max-width: 885px) {
+    width: 343px;
+  }
 }
 
 .content_about {
@@ -58,6 +123,11 @@
   font-family: open_sanssemibold;
   float: left;
   margin-right: 10px;
+
+  @media screen and (max-width: 444px) {
+    font-size: 12px;
+    margin-right: 5px;
+  }
 }
 
 .about-span {
@@ -65,6 +135,11 @@
   color: #727070;
   margin: 0;
   font-family: open_sansregular;
+  float: left;
+
+  @media screen and (max-width: 444px) {
+    font-size: 12px;
+  }
 }
 
 .content_list {
@@ -72,6 +147,11 @@
   margin: 0;
   padding: 0;
   float: right;
+  min-height: 40px;
+
+  @media screen and (max-width: 444px) {
+    float: left;
+  }
 }
 
 .content_item {
@@ -89,9 +169,6 @@
   padding: 0px 5px;
   position: relative;
   text-transform: uppercase;
-  &:first-child {
-    margin-left: 0;
-  }
   &:before {
     content: '';
     position: absolute;
@@ -117,9 +194,20 @@
     border-bottom: 0;
   }
 
+  @media screen and (max-width: 725px){
+    padding-left: 0;
+    padding-top: 40px;
+    margin-bottom: 46px;
+  }
+
   &:before, &:after {
     top: 50%;
     transform: translateY(-50%);
+
+    @media screen and (max-width: 725px) {
+      top: 3px;
+      left: 10px;
+    }
   }
 
   &:before {
@@ -132,6 +220,14 @@
     width: 53px;
     height: 55px;
     left: 2%;
+
+    @media screen and (max-width: 725px) {
+      left: 141px;
+    }
+
+    @media screen and (max-width: 401px) {
+      left: 123px;
+    }
   }
 
   &:after {
@@ -141,6 +237,14 @@
 
     @include sprite($bag);
     left: 28px;
+
+    @media screen and (max-width: 725px) {
+      left: 157px;
+    }
+
+    @media screen and (max-width: 401px) {
+      left: 138px;
+    }
   }
 }
 
@@ -154,11 +258,25 @@
     top: 50%;
     transform: translateY(-50%);
     left: 28px;
+
+    @media screen and (max-width: 725px) {
+      top: 3px;
+      left: 157px;
+
+
+      @media screen and (max-width: 401px) {
+        left: 141px;
+      }
+    }
   }
 }
 
 .about-me_other {
   padding: 38px 38px 5px 38px;
+
+  @media screen and (max-width: 725px){
+    text-align: center;
+  }
 }
 
 
@@ -172,6 +290,16 @@
     top: 50%;
     transform: translateY(-50%);
     left: 28px;
+
+
+    @media screen and (max-width: 725px) {
+      top: 3px;
+      left: 157px;
+    }
+
+    @media screen and (max-width: 401px) {
+      left: 141px;
+    }
   }
 }
 
@@ -186,14 +314,26 @@
     top: 50%;
     transform: translateY(-50%);
     left: 31px;
+
+
+    @media screen and (max-width: 725px) {
+      top: 3px;
+      left: 160px;
+    }
+
+    @media screen and (max-width: 401px) {
+      left: 141px;
+    }
   }
 }
 
-.jade {
-  margin-left: 0;
-}
+
 
 .date {
   font-family: open_sansregular;
   display: block;
+}
+
+.content_about-clear {
+  clear: both;
 }
