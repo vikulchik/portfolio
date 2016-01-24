@@ -75,5 +75,32 @@
   text-decoration: none;
 }
 
+.pop-up_input-download {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+}
 
+.pop-up_label-download {
+  width: 283px;
+  height: 19px;
+  padding: 14px 10px;
+  border: 1px solid #d6d5d3;
+  border-radius: 5px;
+  background-color: #fdfdfd;
+  background: linear-gradient(to bottom, #f7f8f9, #f4f3f3);
+  display: block;
+  margin-bottom: 13px;
+
+  @include font(12, $open-reg,#c7c6c6 );
+}
+
+
+.pop-up_description {
+  margin: 0;
+  margin-bottom: 13px;
+
+  @include font(14, $open-reg, #727070);
+
+}
 
