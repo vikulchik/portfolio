@@ -1,5 +1,13 @@
 .about-me_work {
   padding: 37px;
+
+  @media screen and (max-width: 981px){
+    padding: 30px;
+  }
+
+  @media screen and (max-width: 981px){
+    padding: 21px;
+  }
 }
 
 .my-works {
@@ -20,6 +28,48 @@
     position: relative;
     &:first-child {
       margin-left: 0;
+    }
+
+    @media screen and (max-width: 981px){
+      margin-left: 20px;
+    }
+
+    @media screen and (max-width: 885px){
+      margin-left: 60px;
+      &:first-child {
+        margin-left: 60px;
+      }
+    }
+
+    @media screen and (max-width: 885px){
+      margin-left: 30px;
+      &:first-child {
+        margin-left: 30px;
+      }
+    }
+
+    @media screen and (max-width: 749px){
+      margin-left: 10px;
+
+      &:first-child {
+        margin-left: 10px;
+      }
+    }
+
+    @media screen and (max-width: 682px){
+      margin-left: 5px;
+
+      &:first-child {
+        margin-left: 5px;
+      }
+    }
+
+
+    @media screen and (max-width: 579px){
+      margin-left: 0;
+      &:first-child {
+        margin-left: 0;
+      }
     }
   }
 
@@ -141,6 +191,44 @@
 }
 .my-works_item-other {
   margin-left: 0;
+
+  @media screen and (max-width: 885px){
+    margin-left: 60px;
+  }
+
+  @media screen and (max-width: 885px){
+    margin-left: 30px;
+  }
+
+  @media screen and (max-width: 749px){
+    margin-left: 10px;
+  }
+
+  @media screen and (max-width: 682px){
+    margin-left: 5px;
+  }
+  @media screen and (max-width: 579px){
+    margin-left: 0;
+  }
+}
+
+.about-me_main {
+
+  @media screen and (max-width: 680px){
+   width: 75%;
+    margin: auto;
+  }
+
+  @media screen and (max-width: 646px){
+    width: 80%;
+  }
+  @media screen and (max-width: 611px){
+    width: 85%;
+  }
+
+  @media screen and (max-width: 579px){
+    width: 44%;
+  }
 }
 
 
