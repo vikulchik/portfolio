@@ -77,13 +77,13 @@
           top: -5px;
           left: -17px;
         }
-      } 
-    }
+      }
 
     &:hover {
       &:after {
 
         @include sprite($unlocked);
       }
+    }
     }
   }
