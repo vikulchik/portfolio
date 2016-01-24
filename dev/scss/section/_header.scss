@@ -24,6 +24,13 @@
   display: block;
   float: right;
   margin-top: 28px;
+
+  /*@media screen and (max-width: 680px){
+    float: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }*/
 }
 
 .social_list {

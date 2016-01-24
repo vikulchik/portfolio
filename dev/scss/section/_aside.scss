@@ -6,6 +6,7 @@
   @media screen and (max-width: 680px) {
     float: none;
     margin: auto;
+    width: 42%;
   }
 
   @media screen and (max-width: 444px) {
@@ -22,6 +23,10 @@
   width: 250px;
   min-height: 191px;
   margin-bottom: 16px;
+
+ /* @media screen and (max-width: 680px){
+    display: none;
+  }*/
 }
 
 .nav-item {

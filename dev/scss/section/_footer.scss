@@ -70,7 +70,9 @@
       left: -26px;
 
       @media screen and (max-width: 444px) {
-        top: -18px;
+        top: -7px;
+        left: -18px;
+      }
         @media screen and (max-width: 401px) {
           top: -5px;
           left: -17px;
@@ -85,4 +87,3 @@
       }
     }
   }
-}
