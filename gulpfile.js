@@ -45,6 +45,7 @@ gulp.task('sass-compile', function () {
 // Static server
 gulp.task('browser-sync', function () {
   browserSync.init({
+    port: 7777,
     server: {
       baseDir: "prod"
     }
