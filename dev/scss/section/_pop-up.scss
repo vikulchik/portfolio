@@ -91,8 +91,34 @@
   background: linear-gradient(to bottom, #f7f8f9, #f4f3f3);
   display: block;
   margin-bottom: 13px;
+  position: relative;
 
   @include font(12, $open-reg,#c7c6c6 );
+
+  &:before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 55px;
+    height: 48px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #f8f6f6;
+    background: linear-gradient(to bottom, #f9fafa, #e9e8e8);
+    border-left: 1px solid #d6d5d3;
+    top: 0;
+    right: 0;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    display: block;
+
+    @include sprite($icloud);
+    top: 13px;
+    right: 14px;
+  }
 }
 
 
