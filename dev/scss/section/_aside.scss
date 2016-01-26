@@ -39,16 +39,15 @@
   display: block;
   padding: 16px 30px;
   border: 1px solid #cfcfcf;
-  border-radius: 3px;
-
-  &:hover {
-    background-color: #48bfa1;
-    background: linear-gradient(to bottom, #7ce7cd, #3fb79a);
-    border: 1px solid  #30a285;
-    color: #1e7465;
-  }
 
   &:active {
+    background-color: #8d8a8a;
+    background: linear-gradient(to bottom, #a8a7a7, #7c7979);
+    border: 1px solid  #656565;
+    color: #eeedec;
+  }
+
+  &:hover {
     background-color: #d6d4d4;
     background: linear-gradient(to bottom, #e8e7e7, #bfbcbc);
     border: 1px solid  #b7b7b7;
@@ -78,7 +77,6 @@
   display: block;
   min-height: 21px;
   width: 144px;
-  border-radius: 3px;
   padding: 9px 10px 7px 95px;
   white-space: nowrap;
   overflow: hidden;
@@ -111,7 +109,7 @@
     display: block;
 
     @include sprite($mail);
-    top: 9px;
+    top: 13px;
     left: 20px;
   }
 }
@@ -123,20 +121,23 @@
     display: block;
 
     @include sprite($phone);
-    top: 4px;
+    top: 9px;
     left: 20px;
   }
 }
 
 .contact-skype {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+
   &:before {
     content: '';
     position: absolute;
     display: block;
 
     @include sprite($skype);
-    top: 4px;
-    left: 19px;
+    top: 9px;
+    left: 18px;
   }
 }
 
