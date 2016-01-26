@@ -1,4 +1,4 @@
-> Инструкции по установке моего приложения
+> Инструкции по установке моего сайта
 
 
 1. git clone https://github.com/vikulchik/portfolio.git portfolio
