@@ -1,7 +1,7 @@
 .navigation {
   float: left;
   display: block;
-  width: 25%;
+  width: 26%;
 
   @media screen and (max-width: 680px) {
     float: none;
@@ -20,10 +20,10 @@
 }
 
 .nav-list {
-  width: 250px;
-  min-height: 191px;
-  margin-bottom: 16px;
-
+  width: 252px;
+  margin-bottom: 32px;
+  overflow: hidden;
+  border-radius: 5px;
 }
 
 .nav-item {
@@ -56,8 +56,7 @@
 }
 
 .contact-list {
-  width: 250px;
-  height: 150px;
+  width: 252px;
 
   @media screen and (max-width: 680px) {
     margin-bottom: 30px;
