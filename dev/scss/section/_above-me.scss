@@ -180,8 +180,9 @@
   @include font(14,$open-semi-bold, #727070);
 
   border-bottom: 2px solid #dbdbda;
+  list-style-type: none;
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   padding-bottom: 20px;
   line-height: 2;
   padding-left: 100px;
@@ -289,7 +290,7 @@
 }
 
 .about-me_other {
-  padding: 35px 38px 20px 38px;
+  padding: 40px 40px 15px 40px;
 
   @media screen and (max-width: 725px){
     text-align: center;
@@ -368,6 +369,11 @@
 
 .content_about-clear {
   clear: both;
+}
+
+.about-me_list {
+  margin: 0;
+  padding: 0;
 }
 
 
