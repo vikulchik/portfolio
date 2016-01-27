@@ -2,7 +2,6 @@
 @import "mixins";
 @import "variables";
 @import "fonts";
-
 @import "section/header";
 @import "section/aside";
 @import "section/above-me";
@@ -10,10 +9,6 @@
 @import "section/work";
 @import "section/call-me";
 @import "section/pop-up";
-
-
-
-
 
 body {
   background: url("../img/bg.jpg") no-repeat 0 0;
@@ -46,7 +41,7 @@ html {
 .active {
   background-color: #48bfa1;
   background: linear-gradient(to bottom, #7ce7cd, #3fb79a);
-  border: 1px solid  #30a285;
+  border: 1px solid #30a285;
   color: #1e7465;
 }
 

@@ -8,6 +8,7 @@ html(lang='ru')
     link(rel="icon" href="img/favicon.ico" type="image/x-icon")
     link(rel="stylesheet" href="css/main.css")
     script(src="js/modernizr-custom.js")
+    script(src='https://www.google.com/recaptcha/api.js')
 
   body
     include section/_header
@@ -28,8 +29,7 @@ html(lang='ru')
                     label.our-label.our-label_email Сообщение
                       textarea(name="message" placeholder="Кратко в чем суть").input-placeholder.input-placeholder_message
                     label.our-label.our-label_captca Введите код, указанный на картинке
-                      img(src="../img/captcha.png" alt="captca").label-img
-                      input(type="text" name="text" placeholder="Введите код").input-placeholder.input-placeholder_captca
+                      .g-recaptcha(data-sitekey="6LcmkRYTAAAAAHzy14FKT6K1ZJZWpszOCLuky4aW")
                     .form-button
                       input(type="submit" name="submit" value="Отправить").button-submit.button
                       input(type="reset" name="reset" value="Очистить").button-reset.button
