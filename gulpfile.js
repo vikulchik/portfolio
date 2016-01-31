@@ -11,7 +11,7 @@ var gulp = require('gulp'),
 var paths = {
   scss: {
     location: [
-      'bower_components/normalize-scss/normalize.scss',
+      'bower_components/normalize-scss/_normalize.scss',
       'dev/scss/main.scss'
     ]
   },
