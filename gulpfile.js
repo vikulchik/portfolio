@@ -39,8 +39,8 @@ gulp.task('jade-compile', function () {
 gulp.task('sass-compile', function () {
   gulp.src(paths.scss.location)
     .pipe(sourcemaps.init())
-      .pipe(concat('main.scss'))
-      .pipe(sass().on('error', sass.logError))
+    .pipe(concat('main.scss'))
+    .pipe(sass().on('error', sass.logError))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('dev/css'));
 });
