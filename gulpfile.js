@@ -2,7 +2,9 @@ var gulp = require('gulp'),
   jade = require('gulp-jade'),
   sass = require('gulp-sass'),
   spritesmith = require('gulp.spritesmith'),
-  browserSync = require('browser-sync').create();
+  browserSync = require('browser-sync').create(),
+  concat = require('gulp-concat'),
+  sourcemaps = require('gulp-sourcemaps');
 
 
 
@@ -18,10 +20,9 @@ var paths = {
       'bower_components/jquery/dist/jquery.js',
       'dev/js/main.js'
     ],
-    destination: 'prod/js'
+    destination: 'dev/js'
   }
 };
-
 
 
 
@@ -31,14 +32,24 @@ gulp.task('jade-compile', function () {
     .pipe(jade({
       pretty: true
     }))
-    .pipe(gulp.dest('prod'))
+    .pipe(gulp.dest('dev'))
 });
 
 
 gulp.task('sass-compile', function () {
   gulp.src(paths.scss.location)
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('prod/css'));
+    .pipe(sourcemaps.init())
+      .pipe(concat('main.scss'))
+      .pipe(sass().on('error', sass.logError))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('dev/css'));
+});
+
+
+gulp.task('concat', function () {
+  return gulp.src(paths.js.location)
+    .pipe(concat('main.js'))
+    .pipe(gulp.dest('dev/js'));
 });
 
 
@@ -47,7 +58,7 @@ gulp.task('browser-sync', function () {
   browserSync.init({
     port: 7777,
     server: {
-      baseDir: "prod"
+      baseDir: "dev"
     }
   });
 });
@@ -70,10 +81,11 @@ gulp.task('watch', function () {
 
   gulp.watch('dev/jade/*.jade', ['jade-compile']);
   gulp.watch('dev/scss/**/*.scss', ['sass-compile']);
+  gulp.watch('dev/js/**/*.js', ['concat']);
   gulp.watch([
-    'prod/**/*.html',
-    'prod/css/**/*.css',
-    'prod/js/**/*.js'
+    'dev/**/*.html',
+    'dev/css/**/*.css',
+    'dev/js/**/*.js'
   ]).on("change", browserSync.reload);
 });
 
@@ -82,6 +94,7 @@ gulp.task('default', [
   'sass-compile',
   'browser-sync',
   'sprite',
+  'concat',
   'watch'
 
 ]);

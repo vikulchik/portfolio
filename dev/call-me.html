@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Call me</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/modernizr-custom.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_content clearfix">
+        <div class="header_logo"><a href="http://loftschool.com/" target="_blank" class="header_logo-link"><img src="../img/header-logo.png" alt="logo" class="header_img"></a>
+          <h1 class="header-description"> Logo</h1>
+        </div>
+        <nav class="social_nav">
+          <ul class="social_list">
+            <li class="social_item"><a href="https://www.facebook.com/vika.kovalenko3" target="_blank" class="social_link social_link--facebook">facebook</a></li>
+            <li class="social_item"><a href="https://vk.com/idvikul4ik" target="_blank" class="social_link social_link--vk">vk</a></li>
+            <li class="social_item"><a href="https://twitter.com/vikanovikvika93" target="_blank" class="social_link social_link--twitter">twitter</a></li>
+            <li class="social_item"><a href="https://github.com/vikulchik" target="_blank" class="social_link social_link--github">github</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="main">
+        <div class="main-content clearfix">
+          <section class="navigation">
+            <ul class="nav-list">
+              <!--+list(['Обо мне', 'Мои работы', 'Обратная связь'], nav, 0 )
+              div(class="")
+                ul(class="-list")
+                  each item, key in items
+                    if key == active
+                      li(class="-item -item--avtive")
+                        a(href="#" class="-link")= item
+                    else
+                      li(class="-item")
+                        a(href="#" class="-link")= item
+              -->
+              <li class="nav-item"><a href="index.html" class="nav-link">Обо мне</a></li>
+              <li class="nav-item"><a href="work.html" class="nav-link">Мои работы</a></li>
+              <li class="nav-item"><a href="call-me.html" class="nav-link">Обратная связь</a></li>
+            </ul>
+            <div class="contact-description"><span class="contact-title">Контакты</span></div>
+            <ul class="contact-list">
+              <li class="contact-item"><a href="mailto:kvvendetta@gmail.com" class="contact-link contact-mail">kvvendetta</a></li>
+              <li class="contact-item"><a href="tel:+380631162291" class="contact-link contact-phone">+380631162291</a></li>
+              <li class="contact-item"><a href="skype:vikanovik.vika" class="contact-link contact-skype">vikanovik.vika</a></li>
+            </ul>
+          </section>
+          <div class="main-information">
+            <section class="about-me">
+              <h2 class="about-me_title">У вас интересный проект? Напишите мне</h2>
+              <div class="about-me_info about-me_call-me">
+                <div class="about-me_form clearfix">
+                  <form>
+                    <label class="our-label">Имя
+                      <input type="text" name="text" placeholder="Как к Вам обращаться" class="input-placeholder">
+                    </label>
+                    <label class="our-label">Email
+                      <input type="email" name="email" placeholder="Куда мне писать" class="input-placeholder">
+                    </label>
+                    <label class="our-label our-label_email">Сообщение
+                      <textarea name="message" placeholder="Кратко в чем суть" class="input-placeholder input-placeholder_message"></textarea>
+                    </label>
+                    <label class="our-label our-label_captca">Введите код, указанный на картинке
+                      <div data-sitekey="6LcmkRYTAAAAAHzy14FKT6K1ZJZWpszOCLuky4aW" class="g-recaptcha about-me_captcha"></div>
+                    </label>
+                    <div class="form-button">
+                      <input type="submit" name="submit" value="Отправить" class="button-submit button">
+                      <input type="reset" name="reset" value="Очистить" class="button-reset button">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer_content clearfix">
+        <div class="footer_login"><a href="autorization.html" class="footer_button">Вход</a></div>
+        <h4 class="footer_copyright">&copy;2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!</h4>
+      </div>
+    </footer>
+    <div class="pop-up hide">
+      <div class="pop-up_add">
+        <div class="pop-up_form">
+          <h3 class="pop-up_title">Добавление проекта</h3>
+          <form>
+            <label class="pop-up_label">Название проекта
+              <input type="text" name="text" placeholder="Введите название" class="pop-up_input">
+            </label>
+            <p class="pop-up_description">Картинка проекта</p>
+            <label class="pop-up_label pop-up_label-download">Загрузите изображение
+              <input type="file" name="photo" multiple accept="image/*,image/jpeg" class="pop-up_input pop-up_input-download">
+            </label>
+            <label class="pop-up_label">URL проекта
+              <input type="text" name="text" placeholder="Добавьте ссылку" class="pop-up_input">
+            </label>
+            <label class="pop-up_label">Описание
+              <textarea name="text" placeholder="Пара слов о Вашем проекте" class="pop-up_input pop-up_input-message"></textarea>
+            </label>
+          </form>
+          <div class="button_add"><a href="#" class="input_button button-submit">Добавить</a></div><a href="#" class="pop-up_close">X</a>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
