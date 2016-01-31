@@ -7,11 +7,17 @@ html(lang='ru')
       title Autorization
       link(rel="icon" href="img/favicon.ico" type="image/x-icon")
       link(rel="stylesheet" href="css/main.css")
-      script(src="js/modernizr-custom.js")
       script(src='https://www.google.com/recaptcha/api.js')
+
    body
+      <!--[if lte IE 8]><!-->
+      script(src='js/for-ie.js')
+      <!--<![endif]-->
 
       include section/_footer
    include section/_pop-up
-   script(src="js/main.js")
+
+   script(src="js/app.js" defer)
+
+
 

@@ -5,10 +5,10 @@
     <title>Call me</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/modernizr-custom.js"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
   </head>
-  <body>
+  <body><!--[if lte IE 8]><!-->
+    <script src="js/for-ie.js"></script><!--<![endif]-->
     <header class="header">
       <div class="header_content clearfix">
         <div class="header_logo"><a href="http://loftschool.com/" target="_blank" class="header_logo-link"><img src="../img/header-logo.png" alt="logo" class="header_img"></a>
@@ -110,6 +110,6 @@
         </div>
       </div>
     </div>
-    <script src="js/main.js"></script>
+    <script src="js/app.js" defer></script>
   </body>
 </html>

@@ -155,7 +155,7 @@
 }
 
 .content_item {
-  height: 21px;
+  height: 23px;
   display: inline-block;
   list-style-type: none;
   margin-left: 10px;
@@ -177,7 +177,7 @@
     display: block;
 
     @include sprite($img-block);
-    top: -2px;
+    top: -1px;
     left: -11px
   }
 }

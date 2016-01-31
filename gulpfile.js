@@ -18,10 +18,18 @@ var paths = {
   js: {
     location: [
       'bower_components/jquery/dist/jquery.js',
+      'bower_components/jquery-placeholder/jquery.placeholder.js',
       'dev/js/main.js'
     ],
     destination: 'dev/js'
+  },
+
+  forIe: {
+    location: [
+      'bower_components/html5shiv/dist/html5shiv.js'
+    ]
   }
+
 };
 
 
@@ -48,7 +56,13 @@ gulp.task('sass-compile', function () {
 
 gulp.task('concat', function () {
   return gulp.src(paths.js.location)
-    .pipe(concat('main.js'))
+    .pipe(concat('app.js'))
+    .pipe(gulp.dest('dev/js'));
+});
+
+gulp.task('concat-ie-js', function () {
+  return gulp.src(paths.forIe.location)
+    .pipe(concat('for-ie.js'))
     .pipe(gulp.dest('dev/js'));
 });
 
@@ -95,6 +109,7 @@ gulp.task('default', [
   'browser-sync',
   'sprite',
   'concat',
+  'concat-ie-js',
   'watch'
 
 ]);
