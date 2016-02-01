@@ -1,15 +1,5 @@
 section.navigation
   ul.nav-list
-    //+list(['Обо мне', 'Мои работы', 'Обратная связь'], nav, 0 )
-      div(class="#{navigator}")
-        ul(class="#{navigator}-list")
-          each item, key in items
-            if key == active
-              li(class="#{navigator}-item #{navigator}-item--avtive")
-                a(href="#" class="#{navigator}-link")= item
-            else
-              li(class="#{navigator}-item")
-                a(href="#" class="#{navigator}-link")= item
     li.nav-item
       a(href="index.html").nav-link Обо мне
     li.nav-item
