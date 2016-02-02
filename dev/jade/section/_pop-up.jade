@@ -2,7 +2,7 @@
   .pop-up_add
     .pop-up_form
       h3.pop-up_title Добавление проекта
-      form
+      form(id="pop-up_add-new-project" method="POST")
         label.pop-up_label Название проекта
           input(type="text" name="text" placeholder="Введите название").pop-up_input
         p.pop-up_description Картинка проекта
@@ -13,5 +13,5 @@
         label.pop-up_label Описание
           textarea(name="text" placeholder="Пара слов о Вашем проекте").pop-up_input.pop-up_input-message
       .button_add
-        a(href="#").input_button.button-submit Добавить
+        button(type="submit").input_button.button-submit Добавить
       a(href="#").pop-up_close X

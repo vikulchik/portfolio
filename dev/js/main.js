@@ -1,4 +1,4 @@
-; ( function() {
+; ( function(e) {
 
   $('.my-works_add').on('click', function() {
 

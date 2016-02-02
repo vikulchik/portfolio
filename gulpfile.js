@@ -19,7 +19,8 @@ var paths = {
     location: [
       'bower_components/jquery/dist/jquery.js',
       'bower_components/jquery-placeholder/jquery.placeholder.js',
-      'dev/js/main.js'
+      'dev/js/main.js',
+      'dev/js/ajax.js'
     ],
     destination: 'dev/js'
   },

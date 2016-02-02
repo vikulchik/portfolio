@@ -124,7 +124,7 @@
       <div class="pop-up_add">
         <div class="pop-up_form">
           <h3 class="pop-up_title">Добавление проекта</h3>
-          <form>
+          <form id="pop-up_add-new-project" method="POST">
             <label class="pop-up_label">Название проекта
               <input type="text" name="text" placeholder="Введите название" class="pop-up_input">
             </label>
@@ -139,7 +139,9 @@
               <textarea name="text" placeholder="Пара слов о Вашем проекте" class="pop-up_input pop-up_input-message"></textarea>
             </label>
           </form>
-          <div class="button_add"><a href="#" class="input_button button-submit">Добавить</a></div><a href="#" class="pop-up_close">X</a>
+          <div class="button_add">
+            <button type="submit" class="input_button button-submit">Добавить</button>
+          </div><a href="#" class="pop-up_close">X</a>
         </div>
       </div>
     </div>
