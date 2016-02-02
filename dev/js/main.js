@@ -1,18 +1,21 @@
-; ( function(e) {
+; ( function() {
 
-  $('.my-works_add').on('click', function() {
+  $('.my-works_add').on('click', function(e) {
+    e.preventDefault();
 
-    $('.pop-up').removeClass('hide');
-    $('.pop-up_form').animate({
-
-    });
-
-
+    $('.pop-up').fadeIn(400, function() {
+      $('.pop-up_form').slideDown("slow");
+    }).css('z-index', '9999');
 
   });
 
-  $('.pop-up_close').on('click', function(){
-    $('.pop-up').addClass('hide');
+  $('.pop-up_close').on('click', function(e){
+    e.preventDefault();
+
+    $('.pop-up_form').slideUp('slow', function() {
+      $('.pop-up').fadeOut(500);
+    });
+
   });
 
   $('.nav-link').each(function () {

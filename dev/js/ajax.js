@@ -10,9 +10,12 @@ var addProject = (function(){
   };
 
   var _addProject = function(e){
-
-    console.log('hello');
     e.preventDefault();
+
+    var form = $(this);
+
+
+
 
 
 

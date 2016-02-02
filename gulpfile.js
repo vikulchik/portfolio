@@ -37,7 +37,7 @@ var paths = {
 
 gulp.task('jade-compile', function () {
 
-  gulp.src('dev/jade/*.jade')
+  gulp.src('dev/jade/**/*.jade')
     .pipe(jade({
       pretty: true
     }))
@@ -94,7 +94,7 @@ spriteData.css.pipe(gulp.dest('dev/scss'))
 
 gulp.task('watch', function () {
 
-  gulp.watch('dev/jade/*.jade', ['jade-compile']);
+  gulp.watch('dev/jade/**/*.jade', ['jade-compile']);
   gulp.watch('dev/scss/**/*.scss', ['sass-compile']);
   gulp.watch('dev/js/**/*.js', ['concat']);
   gulp.watch([
