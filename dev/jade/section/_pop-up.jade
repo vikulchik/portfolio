@@ -3,6 +3,8 @@
     .pop-up_form
       h3.pop-up_title Добавление проекта
       form(id="pop-up_add-new-project" method="POST")
+        .server-mes.error-mes
+        .server-mes.success-mes
         label.pop-up_label Название проекта
           input(type="text" name="text" placeholder="Введите название").pop-up_input
         p.pop-up_description Картинка проекта

@@ -43,7 +43,7 @@
     background: linear-gradient(to bottom, #f7f8f9, #f4f3f3);
 
     @include font(12, $open-reg,#c7c6c6 );
-    margin: 13px 0 13px 0;
+    margin: 10px 0 10px 0;
     &:focus {
       outline: 0;
     }
@@ -97,6 +97,7 @@
   margin-bottom: 13px;
   position: relative;
 
+  cursor: pointer;
   @include font(12, $open-reg,#c7c6c6 );
 
   &:before {
@@ -132,5 +133,28 @@
 
   @include font(14, $open-reg, #727070);
 
+}
+
+.server-mes  {
+  width:100%;
+  border-radius: 5px;
+  display: none;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.success-mes {
+  border:1px solid #49bb7b;
+  background-color: #bee3cd;
+
+  @include font(14, $open-reg, #49bb7b);
+}
+
+.error-mes {
+  border:1px solid #cb6945;
+  background-color: #e9c8bc;
+
+  @include font(14, $open-reg, #cb6945);
 }
 
