@@ -13,7 +13,7 @@
     e.preventDefault();
 
     $('.pop-up_form').slideUp('slow', function() {
-      $('.pop-up').fadeOut(500);
+      $('.pop-up').fadeOut(400);
     });
 
   });

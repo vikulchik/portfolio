@@ -144,14 +144,14 @@
   box-sizing: border-box;
 }
 
-.success-mes {
+.success-message {
   border:1px solid #49bb7b;
   background-color: #bee3cd;
 
   @include font(14, $open-reg, #49bb7b);
 }
 
-.error-mes {
+.error-message {
   border:1px solid #cb6945;
   background-color: #e9c8bc;
 

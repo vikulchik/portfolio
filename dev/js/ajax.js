@@ -27,17 +27,27 @@ var addProject = (function(){
 
     .done(function(ans){
       console.log(ans);
-
-      if(ans.mes === 'OK'){
-        form.find('.success-mes').text(ans.text).show();
+      var formStatusText = $(".server-mes");
+      if(ans.status === 'OK'){
+        form.find(formStatusText).addClass('success-message')
+                                 .removeClass("error-message")
+                                 .text(ans.text)
+                                 .show();
       }else {
-        form.find('.error-mes').text(ans.text).show();
+        form.find(formStatusText).addClass('error-message')
+                                 .removeClass("success-message")
+                                 .text(ans.text)
+                                 .show();
       }
     })
 
     .fail(function(){
       console.log("error");
     })
+
+  };
+
+  var _ajaxForm = function(){
 
   };
 
