@@ -3,7 +3,7 @@
   $('.my-works_add').on('click', function(e) {
     e.preventDefault();
 
-    $('.pop-up').fadeIn(400, function() {
+    $('.pop-up').fadeIn(300, function() {
       $('.pop-up_form').slideDown("slow");
     }).css('z-index', '9999');
 
@@ -13,7 +13,7 @@
     e.preventDefault();
 
     $('.pop-up_form').slideUp('slow', function() {
-      $('.pop-up').fadeOut(400);
+      $('.pop-up').fadeOut(300).removeClass('error-message', 'success-message');
     });
 
   });
