@@ -6,17 +6,21 @@
       <form id="pop-up_add-new-project" method="POST">
         <div class="server-mes"></div>
         <label class="pop-up_label">Название проекта
-          <input type="text" name="text" placeholder="Введите название" class="pop-up_input"/>
+          <input type="text" name="text" placeholder="Введите название" class="pop-up_input error"/>
+          <div data-text="введите название" class="pop-up_qtip qtip-name">введите название</div>
         </label>
         <p class="pop-up_description">Картинка проекта</p>
-        <label class="pop-up_label pop-up_label-download">Загрузите изображение
+        <label class="pop-up_label pop-up_label-download error">Загрузите изображение
           <input type="file" name="photo" multiple="multiple" accept="image/*,image/jpeg" class="pop-up_input pop-up_input-download"/>
+          <div data-text="изображение" class="pop-up_qtip qtip-img">изображение</div>
         </label>
         <label class="pop-up_label">URL проекта
-          <input type="text" name="text" placeholder="Добавьте ссылку" class="pop-up_input"/>
+          <input type="text" name="text" placeholder="Добавьте ссылку" class="pop-up_input error"/>
+          <div data-text="ссылка на проек" class="pop-up_qtip qtip-url">ссылка на проек</div>
         </label>
         <label class="pop-up_label">Описание
-          <textarea name="text" placeholder="Пара слов о Вашем проекте" class="pop-up_input pop-up_input-message"></textarea>
+          <textarea name="text" placeholder="Пара слов о Вашем проекте" class="pop-up_input pop-up_input-message error"></textarea>
+          <div data-text="описание проекта" class="pop-up_qtip qtip-text">описание проекта</div>
         </label>
         <div class="button_add">
           <button type="submit" class="input_button button-submit">Добавить</button>

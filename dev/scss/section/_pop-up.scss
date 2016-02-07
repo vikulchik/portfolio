@@ -32,6 +32,7 @@
   &_label {
     font-size: 14px;
     color: #727070;
+    position: relative;
   }
 
   &_input {
@@ -106,7 +107,7 @@
     content: '';
     display: block;
     width: 55px;
-    height: 48px;
+    height: 47px;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
     background-color: #f8f6f6;
@@ -158,4 +159,49 @@
 
   @include font(14, $open-reg, #cb6945);
 }
+
+.pop-up_qtip {
+  position: absolute;
+  display: block;
+  background-color: #ee9b80;
+  background: linear-gradient(to bottom, #f7c0ad, #d8825e);
+  color: #7d2000;
+  font-size: 12px;
+  font-family: open_sanssemibold;
+  padding: 3px 7px;
+  top: 40px;
+  left: -138px;
+  border-radius: 5px;
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    border: 8px solid transparent;
+    border-left: 10px solid #ee9b80;
+    top: 3px;
+    right: -15px;
+  }
+}
+
+.qtip-img {
+  left: -112px;
+  padding: 4px 7px;
+  top: 13px;
+}
+
+.qtip-url {
+  left: -128px;
+}
+
+.qtip-text {
+  left: -138px;
+  top: 82px;
+}
+
+.error {
+  border: 1px solid #e0ad9a;
+}
+
+
+
 
