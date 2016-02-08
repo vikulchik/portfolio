@@ -5,18 +5,18 @@
       form(id="pop-up_add-new-project" method="POST")
         .server-mes
         label.pop-up_label Название проекта
-          input(type="text" name="text" placeholder="Введите название").pop-up_input.error
-          .pop-up_qtip.qtip-name(data-text="введите название") введите название
+          input(type="text" name="text" placeholder="Введите название").pop-up_input
+          .qtip.qtip-name введите название
         p.pop-up_description Картинка проекта
-        label.pop-up_label.pop-up_label-download.error Загрузите изображение
+        label.pop-up_label.pop-up_label-download Загрузите изображение
           input(type="file" name="photo" multiple accept="image/*,image/jpeg").pop-up_input.pop-up_input-download
-          .pop-up_qtip.qtip-img(data-text="изображение") изображение
+          .qtip.qtip-img изображение
         label.pop-up_label URL проекта
-          input(type="text" name="text" placeholder="Добавьте ссылку").pop-up_input.error
-          .pop-up_qtip.qtip-url(data-text="ссылка на проек") ссылка на проек
+          input(type="text" name="text" placeholder="Добавьте ссылку").pop-up_input
+          .qtip.qtip-url ссылка на проек
         label.pop-up_label Описание
-          textarea(name="text" placeholder="Пара слов о Вашем проекте").pop-up_input.pop-up_input-message.error
-          .pop-up_qtip.qtip-text(data-text="описание проекта") описание проекта
+          textarea(name="text" placeholder="Пара слов о Вашем проекте").pop-up_input.pop-up_input-message
+          .qtip.qtip-text описание проекта
         .button_add
           button(type="submit").input_button.button-submit Добавить
       a(href="#").pop-up_close X

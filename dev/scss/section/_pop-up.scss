@@ -160,9 +160,9 @@
   @include font(14, $open-reg, #cb6945);
 }
 
-.pop-up_qtip {
+.qtip {
   position: absolute;
-  display: block;
+  display: none;
   background-color: #ee9b80;
   background: linear-gradient(to bottom, #f7c0ad, #d8825e);
   color: #7d2000;

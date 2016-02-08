@@ -13,6 +13,7 @@
 
 .our-label {
   width: 193px;
+  position: relative;
 
   @include font(14,$open-reg,  #727070);
   display: inline-block;
@@ -144,4 +145,51 @@
 }
 .about-me_captcha {
   margin-top: 20px;
+}
+
+.qtip {
+  position: absolute;
+  display: none;
+  background-color: #ee9b80;
+  background: linear-gradient(to bottom, #f7c0ad, #d8825e);
+  color: #7d2000;
+  font-size: 12px;
+  font-family: open_sanssemibold;
+  padding: 3px 7px;
+  top: 36px;
+  left: -100px;
+  border-radius: 5px;
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    border: 8px solid transparent;
+    border-left: 10px solid #ee9b80;
+    top: 3px;
+    right: -15px;
+  }
+}
+
+.qtip-first-name {
+  left: -100px;
+  top: 34px;
+}
+.qtip-message {
+  top: 109px;
+  left: -95px;
+}
+.qtip-email {
+  left: 202px;
+  height: 17px;
+  width: 87px;
+  top: 31px;
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    border: 8px solid transparent;
+    border-right: 10px solid #ee9b80;
+    top: 3px;
+    right:98px;
+  }
 }
