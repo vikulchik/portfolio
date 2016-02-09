@@ -147,9 +147,9 @@
   margin-top: 20px;
 }
 
-.qtip {
+.qtip_call-me {
   position: absolute;
-  display: none;
+  display: block;
   background-color: #ee9b80;
   background: linear-gradient(to bottom, #f7c0ad, #d8825e);
   color: #7d2000;
@@ -157,7 +157,7 @@
   font-family: open_sanssemibold;
   padding: 3px 7px;
   top: 36px;
-  left: -100px;
+  left: -102px;
   border-radius: 5px;
   &:after {
     content: '';
@@ -171,7 +171,7 @@
 }
 
 .qtip-first-name {
-  left: -100px;
+  left: -101px;
   top: 34px;
 }
 .qtip-message {

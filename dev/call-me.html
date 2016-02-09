@@ -14,14 +14,14 @@
         <div class="header_logo"><a href="http://loftschool.com/" target="_blank" class="header_logo-link"><img src="../img/header-logo.png" alt="logo" class="header_img"></a>
           <h1 class="header-description"> Logo</h1>
         </div>
-        <nav class="social_nav">
-          <ul class="social_list">
-            <li class="social_item"><a href="https://www.facebook.com/vika.kovalenko3" target="_blank" class="social_link social_link--facebook">facebook</a></li>
-            <li class="social_item"><a href="https://vk.com/idvikul4ik" target="_blank" class="social_link social_link--vk">vk</a></li>
-            <li class="social_item"><a href="https://twitter.com/vikanovikvika93" target="_blank" class="social_link social_link--twitter">twitter</a></li>
-            <li class="social_item"><a href="https://github.com/vikulchik" target="_blank" class="social_link social_link--github">github</a></li>
+        <div class="socials">
+          <ul class="socials_list">
+            <li class="socials_item"><a href="https://www.facebook.com/vika.kovalenko3" target="_blank" class="socials_link socials_link--facebook">facebook</a></li>
+            <li class="socials_item"><a href="https://vk.com/idvikul4ik" target="_blank" class="socials_link socials_link--vk">vk</a></li>
+            <li class="socials_item"><a href="https://twitter.com/vikanovikvika93" target="_blank" class="socials_link socials_link--twitter">twitter</a></li>
+            <li class="socials_item"><a href="https://github.com/vikulchik" target="_blank" class="socials_link socials_link--github">github</a></li>
           </ul>
-        </nav>
+        </div>
       </div>
     </header>
     <div class="wrapper">
@@ -45,18 +45,18 @@
               <h2 class="about-me_title">У вас интересный проект? Напишите мне</h2>
               <div class="about-me_info about-me_call-me">
                 <div class="about-me_form clearfix">
-                  <form>
+                  <form id="pop-up_add-new-project" method="POST">
                     <label class="our-label">Имя
                       <input type="text" name="text" placeholder="Как к Вам обращаться" class="input-placeholder">
-                      <div class="qtip qtip-first-name">введите имя</div>
+                      <div class="qtip qtip_call-me qtip-first-name hide">введите имя</div>
                     </label>
                     <label class="our-label">Email
                       <input type="email" name="email" placeholder="Куда мне писать" class="input-placeholder">
-                      <div class="qtip qtip-email">введите email</div>
+                      <div class="qtip qtip_call-me qtip-email hide">введите email</div>
                     </label>
                     <label class="our-label our-label_email">Сообщение
                       <textarea name="message" placeholder="Кратко в чем суть" class="input-placeholder input-placeholder_message"></textarea>
-                      <div class="qtip qtip-message">ваш вопрос</div>
+                      <div class="qtip qtip_call-me qtip-message hide">ваш вопрос</div>
                     </label>
                     <label class="our-label our-label_captca">Введите код, указанный на картинке
                       <div data-sitekey="6LcmkRYTAAAAAHzy14FKT6K1ZJZWpszOCLuky4aW" class="g-recaptcha about-me_captcha"></div>
@@ -87,20 +87,20 @@
             <div class="server-mes"></div>
             <label class="pop-up_label">Название проекта
               <input type="text" name="text" placeholder="Введите название" class="pop-up_input">
-              <div class="qtip qtip-name">введите название</div>
+              <div class="qtip qtip-name hide">введите название</div>
             </label>
             <p class="pop-up_description">Картинка проекта</p>
             <label class="pop-up_label pop-up_label-download">Загрузите изображение
               <input type="file" name="photo" multiple accept="image/*,image/jpeg" class="pop-up_input pop-up_input-download">
-              <div class="qtip qtip-img">изображение</div>
+              <div class="qtip qtip-img hide">изображение</div>
             </label>
             <label class="pop-up_label">URL проекта
               <input type="text" name="text" placeholder="Добавьте ссылку" class="pop-up_input">
-              <div class="qtip qtip-url">ссылка на проек</div>
+              <div class="qtip qtip-url hide">ссылка на проек</div>
             </label>
             <label class="pop-up_label">Описание
               <textarea name="text" placeholder="Пара слов о Вашем проекте" class="pop-up_input pop-up_input-message"></textarea>
-              <div class="qtip qtip-text">описание проекта</div>
+              <div class="qtip qtip-text hide">описание проекта</div>
             </label>
             <div class="button_add">
               <button type="submit" class="input_button button-submit">Добавить</button>
