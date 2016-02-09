@@ -160,7 +160,7 @@
   @include font(14, $open-reg, #cb6945);
 }
 
-.qtip {
+.tooltip {
   position: absolute;
   display: block;
   background-color: #ee9b80;
@@ -184,17 +184,17 @@
   }
 }
 
-.qtip-img {
+.tooltip-img {
   left: -112px;
   padding: 4px 7px;
   top: 13px;
 }
 
-.qtip-url {
+.tooltip-url {
   left: -128px;
 }
 
-.qtip-text {
+.tooltip-text {
   left: -138px;
   top: 82px;
 }
