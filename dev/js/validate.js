@@ -2,6 +2,7 @@
 
   $("#pop-up_add-new-project").on('submit',  validate);
   $("input, textarea").on('keydown', removeTooltips);
+  $('input[type=file]').on('change', removeTooltips);
 
   function validate(){
     var inputs = $(this).find('input, textarea');
@@ -17,10 +18,12 @@
   }
 
   function removeTooltips(){
-   $(this).next().addClass('hide');
-   $(this).removeClass('error');
-   if ($('input').attr('type') === 'file'){
-    $(this).removeClass('error');
+    var $this = $(this);
+    $this.next().addClass('hide');
+   if ($this.attr('type') === 'file'){
+     $this.parent().removeClass('error');
+   }else {
+     $this.removeClass('error');
    }
   }
 

@@ -22,7 +22,7 @@
   $('input, textarea').placeholder();
 
   $(".pop-up_input-download").on('change', function(){
-    $(".pop-up_label-download").html($(this).val());
+    $(".pop-up_label-download span").text($(this).val());
   });
 
 }());
