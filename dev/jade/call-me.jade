@@ -19,7 +19,23 @@ html(lang='ru')
     .wrapper
       .main
         .main-content.clearfix
-          include section/_aside
+          section.navigation
+            ul.nav-list
+              li.nav-item
+                a(href="index.html").nav-link Обо мне
+              li.nav-item
+                a(href="work.html").nav-link Мои работы
+              li.nav-item
+                a(href="call-me.html").nav-link.active Обратная связь
+            .contact-description
+              span.contact-title Контакты
+            ul.contact-list
+              li.contact-item
+                a(href="mailto:kvvendetta@gmail.com").contact-link.contact-mail kvvendetta
+              li.contact-item
+                a(href="tel:+380631162291").contact-link.contact-phone +380631162291
+              li.contact-item
+                a(href="skype:vikanovik.vika").contact-link.contact-skype vikanovik.vika
           .main-information
             section.about-me
               h2.about-me_title У вас интересный проект? Напишите мне
