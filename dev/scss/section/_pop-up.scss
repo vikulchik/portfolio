@@ -172,6 +172,7 @@
   top: 40px;
   left: -138px;
   border-radius: 5px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
   &:after {
     content: '';
     position: absolute;
@@ -199,7 +200,7 @@
 }
 
 .error {
-  border: 1px solid #e0ad9a;
+  border: 2px solid #e0ad9a;
 }
 
 

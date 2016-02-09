@@ -11436,7 +11436,7 @@ addProject.init();
   }
 
   function removeTooltips(){
-    $("input").removeClass('hide');
+    $(this).next();
   }
 
 }());

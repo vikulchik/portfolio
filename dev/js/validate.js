@@ -16,7 +16,7 @@
   }
 
   function removeTooltips(){
-    $("input").removeClass('hide');
+    $(this).next();
   }
 
 }());
