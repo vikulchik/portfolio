@@ -11343,6 +11343,48 @@ return jQuery;
 
 
 
+var validate = true;
+
+;(function(){
+
+  $("#pop-up_add-new-project").on('submit',  validation);
+  $("input, textarea").on('keydown', removeTooltips);
+  $('input[type=file]').on('change', removeTooltips);
+  $('.button-reset').on('click',  function(){
+   $('input, textarea').removeClass('error');
+   $('.tooltip').addClass('hide');
+  });
+
+  function validation(){
+    var inputs = $(this).find('input, textarea');
+    inputs.each(function(){
+      var $this = $(this);
+      if ($this.val().length < 1){
+        validate = false;
+        $this.next().removeClass("hide");
+        if ($this.attr('type') === 'file'){
+          $this.parent().addClass('error');
+        }else {
+          $this.addClass('error');
+        }
+      }else {
+        validate = true;
+      }
+    });
+
+  }
+
+  function removeTooltips(){
+    var $this = $(this);
+    $this.next().addClass('hide');
+   if ($this.attr('type') === 'file'){
+     $this.parent().removeClass('error');
+   }else {
+     $this.removeClass('error');
+   }
+  }
+
+}());
 var addProject = (function(){
 
   //Инициализирует модуль
@@ -11362,6 +11404,8 @@ var addProject = (function(){
 
   var _addProject = function(e){
     e.preventDefault();
+
+    if(!validate) return;
 
     var form = $(this);
     var url = 'add_project.php';
@@ -11392,8 +11436,6 @@ var addProject = (function(){
 
   var _ajaxForm = function(form, url){
 
-    //if(!valid) return false;
-
     data = form.serialize();
 
     var result =  $.ajax({
@@ -11417,34 +11459,3 @@ var addProject = (function(){
 })();
 
 addProject.init();
-
-;(function(){
-
-  $("#pop-up_add-new-project").on('submit',  validate);
-  $("input, textarea").on('keydown', removeTooltips);
-  $('input[type=file]').on('change', removeTooltips);
-
-  function validate(){
-    var inputs = $(this).find('input, textarea');
-    inputs.each(function(){
-      var $this = $(this);
-      if ($this.val().length < 1){
-        $('.tooltip').removeClass("hide");
-        $this.addClass('error');
-        $(".pop-up_label-download").addClass('error');
-      }
-    });
-
-  }
-
-  function removeTooltips(){
-    var $this = $(this);
-    $this.next().addClass('hide');
-   if ($this.attr('type') === 'file'){
-     $this.parent().removeClass('error');
-   }else {
-     $this.removeClass('error');
-   }
-  }
-
-}());

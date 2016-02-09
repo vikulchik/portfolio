@@ -18,6 +18,8 @@ var addProject = (function(){
   var _addProject = function(e){
     e.preventDefault();
 
+    if(!validate) return;
+
     var form = $(this);
     var url = 'add_project.php';
     var myServerGiveMeAnAnswer = _ajaxForm(form, url);
@@ -46,8 +48,6 @@ var addProject = (function(){
   //3. делает запрос на сервер и возвращает ответ из сервера
 
   var _ajaxForm = function(form, url){
-
-    //if(!valid) return false;
 
     data = form.serialize();
 
