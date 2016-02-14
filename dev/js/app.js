@@ -11351,8 +11351,8 @@ var validate = true;
   $("input, textarea").on('keydown', removeTooltips);
   $('input[type=file]').on('change', removeTooltips);
   $('.button-reset').on('click',  function(){
-   $('input, textarea').removeClass('error');
-   $('.tooltip').addClass('hide');
+  $('input, textarea').removeClass('error');
+  $('.tooltip').addClass('hide');
   });
 
   function validation(){
@@ -11360,17 +11360,21 @@ var validate = true;
     inputs.each(function(){
       var $this = $(this);
       if ($this.val().length < 1){
-        validate = false;
         $this.next().removeClass("hide");
         if ($this.attr('type') === 'file'){
           $this.parent().addClass('error');
         }else {
           $this.addClass('error');
         }
-      }else {
-        validate = true;
       }
     });
+
+    if ($('.pop-up_form').find('.error').length) {
+      validate = false;
+    } else {
+      validate = true;
+    }
+
 
   }
 

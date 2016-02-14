@@ -13,6 +13,7 @@
 .my-works {
   margin: 0;
   padding: 0;
+  margin-left: -32px;
 
   &_item {
     width: 165px;
@@ -27,9 +28,6 @@
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
     position: relative;
     overflow: hidden;
-    &:first-child {
-      margin-left: 0;
-    }
 
     @media screen and (max-width: 981px){
       margin-left: 20px;
@@ -191,7 +189,6 @@
   @include font(11, $open-semi-bold,#ffffff );
 }
 .my-works_item-other {
-  margin-left: 0;
 
   @media screen and (max-width: 885px){
     margin-left: 60px;
